@@ -3,18 +3,91 @@
 <head>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		.column {
+		  float: left;
+		  padding: 10px;
+		  height: 500px;
+		  width: 500px;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		.model {
+		  height: 500px;
+		  width: 500px;
+		}
+	</style>
 <title>Models</title>
 </head>
 <body>
-	<h1>Pantograf</h1>
-	<model-viewer style="width: 500px; height: 500px;" src="Elektro_Pantograf.glb" alt="Pantograf" autoplay auto-rotate camera-controls></model-viewer>
-	<h1>Motor Explode</h1>
-	<model-viewer style="width: 500px; height: 500px;" src="eMotor_Explode_Android.glb" alt="Motor Explode" autoplay auto-rotate camera-controls></model-viewer>
-	<h1>Motor Inside</h1>
-	<model-viewer style="width: 500px; height: 500px;" src="eMotor_Inside.glb" alt="Motor Inside" autoplay auto-rotate camera-controls></model-viewer>
-	<h1>Forklift</h1>
-	<model-viewer style="width: 500px; height: 500px;" src="Forklift.glb" alt="Forklift" autoplay auto-rotate camera-controls></model-viewer>
-	<h1>Industrial Lift</h1>
-	<model-viewer style="width: 500px; height: 500px;" src="Industrial_Lift.glb" alt="Industrial Lift" autoplay auto-rotate camera-controls></model-viewer>
+
+	<div class="row">
+		<h1>Pantograf</h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<model-viewer class="model" src="Models_Android/Elektro_Pantograf.glb" alt="Pantograf" ar autoplay auto-rotate camera-controls></model-viewer>
+		</div>
+		<div class="column">
+			<a href="Models_iOS/Elektro_Pantograf.usdz" rel="ar"><img src="Thumbnails/20200528_101932711_iOS.png" srcset="Thumbnails/20200528_101932711_iOS.png" alt="Pantograf"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>Motor Explode</h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<model-viewer class="model" src="Models_Android/eMotor_Explode_Android.glb" alt="Motor Explode" ar autoplay auto-rotate camera-controls></model-viewer>
+		</div>
+		<div class="column">
+			<a href="Models_iOS/eMotor_Explode_Android.usdz" rel="ar"><img src="Thumbnails/20200528_102203345_iOS.png" srcset="Thumbnails/20200528_102203345_iOS.png" alt="Motor Explode"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>Motor Inside</h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<model-viewer class="model" src="Models_Android/eMotor_Inside.glb" alt="Motor Inside" ar autoplay auto-rotate camera-controls></model-viewer>
+		</div>
+		<div class="column">
+			<a href="Models_iOS/eMotor_Inside.usdz" rel="ar"><img src="Thumbnails/20200528_102306777_iOS.png" srcset="Thumbnails/20200528_102306777_iOS.png" alt="Motor Inside"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>Forklift</h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<model-viewer class="model" src="Models_Android/Forklift.glb" alt="Forklift" ar autoplay auto-rotate camera-controls></model-viewer>
+		</div>
+		<div class="column">
+			<a href="Models_iOS/Forklift.usdz" rel="ar"><img src="Thumbnails/20200528_102433918_iOS.png" srcset="Thumbnails/20200528_102433918_iOS.png" alt="Forklift"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<h1>Industrial Lift</h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<model-viewer class="model" src="Models_Android/Industrial_Lift.glb" alt="Industrial Lift" ar autoplay auto-rotate camera-controls></model-viewer>
+		</div>
+		<div class="column">
+			<a href="Models_iOS/Industrial_Lift.usdz" rel="ar"><img src="Thumbnails/20200528_102526175_iOS.png" srcset="Thumbnails/20200528_102526175_iOS.png" alt="Industrial Lift"></a>
+		</div>
+	</div>
 </body>
 </html>
