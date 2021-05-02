@@ -10,7 +10,7 @@ function isIOS() {
     'iPod'
   ].includes(navigator.platform)
   // iPad on iOS 13 detection
-  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  || (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
 }
 
 // Try to start the iOS AR Quick Look immediatelly
@@ -18,7 +18,7 @@ function isIOS() {
 // @see https://infinitygames-kids-galicnik.glitch.me/
 if (isIOS) {
   var checkExist = setInterval(function() {
-    modelViewer = document.querySelector("model-viewer");
+    const modelViewer = document.querySelector('model-viewer');
     if (modelViewer != null) {
       modelViewer.activateAR();
       clearInterval(checkExist);
