@@ -29,6 +29,8 @@
 * later versions (up to and including 1.6.0) does not work
 
 ### Working script (version 1.6.0):
+* redirected script: https://unpkg.com/@google/model-viewer@1.6.0/dist/model-viewer.min.js
+
 ```
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
