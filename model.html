@@ -12,15 +12,15 @@
 
 	<!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
 	<script src="https://unpkg.com/focus-visible/dist/focus-visible.min.js" defer></script>
-	
-	<!-- 💁 OPTIONAL: On iOS, opens the iOS AR Quick Look App immediatelly -->
-	<script src="ios-redirect.js"></script>
 
 	<!-- 🚨 REQUIRED: The model-viewer component -->
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	
 	<!-- Assigns model based on URL parameters -->
-	<script src="assign-model.js"></script>
+	<script src="scripts/assign-model.js"></script>
+	
+	<!-- On iOS, opens the iOS AR Quick Look App immediatelly -->
+	<script src="scripts/ios-redirect.js"></script>
 	
 	<link rel="stylesheet" href="model.css">
 </head>
