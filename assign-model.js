@@ -24,6 +24,7 @@ var checkExist = setInterval(function() {
   }
   
   if (modelViewer != null) {
+    console.log("exists")
       clearInterval(checkExist);
   }
   
