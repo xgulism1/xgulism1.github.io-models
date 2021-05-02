@@ -1,4 +1,13 @@
 Console.log("test123");
+
+window.addEventListener('load', function () {
+  console.log('This function is executed once the page is fully loaded');
+});
+
+(() => {
+  console.log('This function runs now');
+})();
+
 (() => {
   // Test if this is iOS
   var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
