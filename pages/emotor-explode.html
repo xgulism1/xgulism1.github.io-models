@@ -6,7 +6,14 @@
 	
 	<link rel="stylesheet" href="style.css">
 	
-	<script src="ios-redirect.js"></script>
+	<script>
+        (() => {
+		var isIOS = /iPhone|iPad|iPod|i.test(navigator.userAgent);
+		if (isIOS) {
+			window.location.href = "../models-ios/eMotor_Explode.usdz";
+		}
+        })();
+    </script>
 </head>
 <body>
 	<model-viewer src="../models-android/eMotor_Explode.glb"
