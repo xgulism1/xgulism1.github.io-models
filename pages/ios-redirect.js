@@ -13,7 +13,7 @@ function isIOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
-// Use interval to check if model-viewer exists and try to start the iOS AR Quick Look immediatelly
+// Try to start the iOS AR Quick Look immediatelly
 // @see https://github.com/google/model-viewer/issues/697
 // @see https://infinitygames-kids-galicnik.glitch.me/
 if (isIOS) {
