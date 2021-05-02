@@ -2,13 +2,13 @@
 
 ## Testing versions on Android:
 
-### Script (needed):
+### Scripts (needed):
 * https://unpkg.com/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js
 * https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js
 * https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js
 * https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js
 * https://unpkg.com/@google/model-viewer@1.6.0/dist/model-viewer.min.js
-* 
+
 ```
 <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
 <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
@@ -26,7 +26,7 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 ```
 
-### Scripts (last working when tested, no longer needed):
+### Tests (not relevant anymore):
 ```
 <!-- The following libraries and polyfills are recommended to maximize browser support -->
 
@@ -46,8 +46,6 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer-legacy.js"></script>
 ```
-
-### Tests (not relevant anymore):
 
 * version 1.2.1 is the last working version
 * version 1.3.0 works only for some models
