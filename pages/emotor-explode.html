@@ -8,7 +8,7 @@
 	
 	<script>
         (() => {
-		var isIOS = /iPhone|iPad|iPod|i.test(navigator.userAgent);
+		var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 		if (isIOS) {
 			window.location.href = "../models-ios/eMotor_Explode.usdz";
 		}
