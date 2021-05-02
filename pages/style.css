@@ -14,6 +14,6 @@ model-viewer#reveal {
 	--poster-color: transparent;
 }
 
-a#default-ar-button {
-	width: 100px;
+#default-ar-button {
+	--ar-button-scale: 5;
 }
