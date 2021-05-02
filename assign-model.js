@@ -2,6 +2,7 @@
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const modelViewer = document.querySelector('model-viewer');
+console.log(modelViewer);
 
   if (urlParams.has('filename')) {
     const filename = urlParams.get('filename');
