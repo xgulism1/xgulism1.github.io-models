@@ -22,9 +22,9 @@
 	<link rel="stylesheet" href="style.css">
 	
 	<script>
-	(() => {
-		var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-		if (isIOS) {
+	//(() => {
+	//	var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+	//	if (isIOS) {
 			var checkExist = setInterval(function() {
 				modelViewer = document.querySelector("model-viewer");
 				if (modelViewer != null) {
@@ -32,8 +32,8 @@
 					clearInterval(checkExist);
 				}
 			}, 2000);
-		}
-	})();
+	//	}
+	//})();
     </script>
 </head>
 <body>
