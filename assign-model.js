@@ -1,7 +1,7 @@
 
-console.log("test123")
+console.log("test")
 
-/*var checkExist = setInterval(function() {
+var checkExist = setInterval(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const modelViewer = document.querySelector('model-viewer');
@@ -29,7 +29,7 @@ console.log("test123")
   
   if (modelViewer != null) {
     console.log("exists")
-      clearInterval(checkExist);
+    clearInterval(checkExist);
   }
   
-}, 500);*/
+}, 500);
