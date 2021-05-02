@@ -19,7 +19,7 @@ function isIOS() {
 if (isIOS()) {
   var checkExist = setInterval(function() {
     const modelViewer = document.querySelector('model-viewer');
-    if (modelViewer) {
+    if (modelViewer && modelViewer.hasAttribute("ios-src")) {
       modelViewer.activateAR();
       clearInterval(checkExist);
     }
