@@ -17,12 +17,12 @@ function isIOS() {
 // @see https://github.com/google/model-viewer/issues/697
 // @see https://infinitygames-kids-galicnik.glitch.me/
 //if (isIOS()) {
-  var redirectInterval = setInterval(function() {
+  var iosRedirectInterval = setInterval(function() {
     const modelViewer = document.querySelector('model-viewer');
     // Wait until ios-src is assigned
     if (modelViewer && modelViewer.hasAttribute('ios-src')) {
       modelViewer.activateAR();
-      //clearInterval(redirectInterval);
+      //clearInterval(iosRedirectInterval);
     }
   }, 500);
 //}
