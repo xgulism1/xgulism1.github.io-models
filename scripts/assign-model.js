@@ -9,7 +9,7 @@ if (urlParams.has('title')) {
 }
 
 // Try to assign model to the model-viewer
-var checkExist = setInterval(function() {
+var assignModelInterval = setInterval(function() {
   const modelViewer = document.querySelector('model-viewer');
   if (modelViewer) {
     if (urlParams.has('src')) {
@@ -28,6 +28,6 @@ var checkExist = setInterval(function() {
       const alt = urlParams.get('alt');
       modelViewer.setAttribute('alt', `${alt}`);
     }
-    clearInterval(checkExist);
+    clearInterval(assignModelInterval);
   }
 }, 500);
