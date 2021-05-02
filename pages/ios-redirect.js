@@ -10,6 +10,7 @@ window.addEventListener('load', function () {
 
 // Test if this is iOS
 var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+console.log(isIOS);
 if (isIOS) {
   // Use interval to check if model-viewer exists and try to start the iOS AR Quick Look immediatelly
   var checkExist = setInterval(function() {
