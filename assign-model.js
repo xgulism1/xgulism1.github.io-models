@@ -1,7 +1,7 @@
 
 console.log("test123")
 
-var checkExist = setInterval(function() {
+/*var checkExist = setInterval(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const modelViewer = document.querySelector('model-viewer');
@@ -32,4 +32,4 @@ var checkExist = setInterval(function() {
       clearInterval(checkExist);
   }
   
-}, 500);
+}, 500);*/
