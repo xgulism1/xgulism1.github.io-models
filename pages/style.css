@@ -1,9 +1,13 @@
 html, body {
   height: 100%;
-  width: 100%;
+ 	width: auto;
+ 	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .model {
   height: 100%;
-  width: 100%;
+ 	width: auto;
+ 	margin-left: 0px;
+	margin-right: 0px;
 }
