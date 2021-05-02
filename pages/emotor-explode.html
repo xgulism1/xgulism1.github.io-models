@@ -20,31 +20,6 @@
 	<script src="ios-redirect.js"></script>
 	
 	<link rel="stylesheet" href="style.css">
-	
-	<!--script>
-		function isIOS() {
-			return [
-				'iPad Simulator',
-				'iPhone Simulator',
-				'iPod Simulator',
-				'iPad',
-				'iPhone',
-				'iPod'
-			].includes(navigator.platform)
-			// iPad on iOS 13 detection
-			|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-		}
-		
-		if (isIOS) {
-			var checkExist = setInterval(function() {
-				modelViewer = document.querySelector("model-viewer");
-				if (modelViewer != null) {
-					modelViewer.activateAR();
-					clearInterval(checkExist);
-				}
-			}, 2000);
-		}
-    </script-->
 </head>
 <body>
 	<model-viewer src="../models-android/eMotor_Explode.glb"
