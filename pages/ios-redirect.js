@@ -1,4 +1,4 @@
-Console.log("test123");
+console.log("test123");
 
 window.addEventListener('load', function () {
   console.log('This function is executed once the page is fully loaded');
