@@ -1,11 +1,7 @@
-
-console.log("test")
-
-var checkExist = setInterval(function() {
+//var checkExist = setInterval(function() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const modelViewer = document.querySelector('model-viewer');
-  console.log(modelViewer)
 
   if (urlParams.has('filename')) {
     const filename = urlParams.get('filename');
@@ -27,9 +23,9 @@ var checkExist = setInterval(function() {
     document.title = `${friendlyName}`;
   }
   
-  if (modelViewer != null) {
+  /*if (modelViewer != null) {
     console.log("exists")
     clearInterval(checkExist);
-  }
+  }*/
   
-}, 500);
+//}, 500);
