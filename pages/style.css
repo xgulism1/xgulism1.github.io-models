@@ -10,12 +10,7 @@ html, body {
 	margin: 0px;
 }
 
-model-viewer#reveal {
+model-viewer {
 	--poster-color: transparent;
 	--ar-button-scale: 5;
-}
-
-#default-ar-button {
-	bottom: 32px;
-	right: 32px;
 }
