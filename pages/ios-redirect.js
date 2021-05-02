@@ -1,3 +1,4 @@
+Console.log("test123");
 (() => {
   // Test if this is iOS
   var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
