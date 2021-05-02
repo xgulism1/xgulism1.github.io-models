@@ -45,7 +45,7 @@
 <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
 <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-<!-- The model-viewer component -->
+<!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer-legacy.js"></script>
 ```
