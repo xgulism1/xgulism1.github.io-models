@@ -19,12 +19,21 @@
 	<link rel="stylesheet" href="style.css">
 	
 	<script>
-        (() => {
+        //(() => {
 		//var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 		//if (isIOS) {
 		//	window.location.href = "../models-ios/eMotor_Explode.usdz";
 		//}
-        })();
+        //})();
+	(() => {
+		var checkExist = setInterval(function() {
+			modelViewer = document.querySelector("model-viewer");
+			if (modelViewer != null) {
+				modelViewer.activateAR();
+				clearInterval(checkExist);
+			}
+		}, 100);
+	})();
     </script>
 </head>
 <body>
