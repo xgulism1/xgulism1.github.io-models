@@ -16,6 +16,7 @@ if (isIOS) {
     modelViewer = document.querySelector("model-viewer");
     if (modelViewer != null) {
       // Start the iOS AR Quick Look
+      console.log('activateAR');
       modelViewer.activateAR();
       clearInterval(checkExist);
     }
