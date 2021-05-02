@@ -23,16 +23,16 @@
 	
 	<script>
 	(() => {
-		//var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-		//if (isIOS) {
+		var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+		if (isIOS) {
 			var checkExist = setInterval(function() {
 				modelViewer = document.querySelector("model-viewer");
 				if (modelViewer != null) {
 					modelViewer.activateAR();
 					clearInterval(checkExist);
 				}
-			}, 500);
-		//}
+			}, 2000);
+		}
 	})();
     </script>
 </head>
