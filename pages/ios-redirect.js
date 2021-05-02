@@ -13,12 +13,13 @@ function isIOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
+// Use interval to check if model-viewer exists and try to start the iOS AR Quick Look immediatelly
+// @see https://github.com/google/model-viewer/issues/697
+// @see https://infinitygames-kids-galicnik.glitch.me/
 if (isIOS) {
-  // Use interval to check if model-viewer exists and try to start the iOS AR Quick Look immediatelly
   var checkExist = setInterval(function() {
     modelViewer = document.querySelector("model-viewer");
     if (modelViewer != null) {
-      // Start the iOS AR Quick Look
       modelViewer.activateAR();
       clearInterval(checkExist);
     }
