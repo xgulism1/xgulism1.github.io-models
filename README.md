@@ -5,7 +5,6 @@
 ### Files:
 
 * https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer-legacy.js
-
 * https://unpkg.com/@google/model-viewer@1.2.1/dist/model-viewer.min.js
 
 ### Tests:
