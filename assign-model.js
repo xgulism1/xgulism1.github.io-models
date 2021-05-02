@@ -9,4 +9,5 @@ if (urlParams.has('model')) {
   modelViewer.setAttribute('ios-src', `models-ios/${modelName}.usdz`);
   modelViewer.setAttribute('poster', `thumbnails/${modelName}.jpg`);
   modelViewer.setAttribute('alt', `${modelAlt}`);
+  document.title = `${modelAlt}`;
 }
