@@ -11,4 +11,4 @@
 
 * version 1.2.1 is the last working version
 * version 1.3.0 works only for some models
-* later version does not work
+* later versions does not work
