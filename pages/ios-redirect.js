@@ -18,7 +18,7 @@ if (isIOS) {
       // Start the iOS AR Quick Look
       console.log('activateAR');
       modelViewer.activateAR();
-      clearInterval(checkExist);
+      //clearInterval(checkExist);
     }
   }, 5000);
 }
