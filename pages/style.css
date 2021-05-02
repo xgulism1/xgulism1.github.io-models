@@ -13,3 +13,7 @@ html, body {
 model-viewer#reveal {
 	--poster-color: transparent;
 }
+
+ar-button {
+	top: 16px;
+}
