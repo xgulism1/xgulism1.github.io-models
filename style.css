@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px;
+  width: 500px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.model {
+  height: 500px;
+  width: 500px;
+ }
