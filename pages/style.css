@@ -4,13 +4,10 @@ html, body {
 	margin: 0px;
 }
 
-.model {
+model-viewer {
 	height: 100%;
 	width: 100%;
 	margin: 0px;
-}
-
-model-viewer {
 	--poster-color: transparent;
 	--ar-button-scale: 5;
 }
