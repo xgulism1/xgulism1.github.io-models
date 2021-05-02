@@ -1,7 +1,5 @@
 # xgulism1.github.io
 
-## Testing versions on Android:
-
 ### Scripts (needed):
 * https://unpkg.com/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js
 * https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js
