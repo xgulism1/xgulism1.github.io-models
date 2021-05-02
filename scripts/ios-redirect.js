@@ -22,7 +22,7 @@ if (isIOS()) {
     // Wait until ios-src is assigned
     if (modelViewer && modelViewer.hasAttribute("ios-src")) {
       modelViewer.activateAR();
-      clearInterval(checkExist);
+      //clearInterval(checkExist);
     }
   }, 500);
 }
