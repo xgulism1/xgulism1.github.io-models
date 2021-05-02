@@ -3,24 +3,30 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 // Assign title
-if (urlParams.has('friendly-name')) {
-  const friendlyName = urlParams.get('friendly-name');
-  document.title = `${friendlyName}`;
+if (urlParams.has('title')) {
+  const title = urlParams.get('title');
+  document.title = `${title}`;
 }
 
 // Try to assign model to the model-viewer
 var checkExist = setInterval(function() {
   const modelViewer = document.querySelector('model-viewer');
   if (modelViewer) {
-    if (urlParams.has('filename')) {
-      const filename = urlParams.get('filename');
-      modelViewer.setAttribute('src', `models-android/${filename}.glb`);
-      modelViewer.setAttribute('ios-src', `models-ios/${filename}.usdz`);
-      modelViewer.setAttribute('poster', `thumbnails/${filename}.jpg`);
+    if (urlParams.has('src')) {
+      const src = urlParams.get('src');
+      modelViewer.setAttribute('src', `${src}`);
     }
-    if (urlParams.has('friendly-name')) {
-      const friendlyName = urlParams.get('friendly-name');
-      modelViewer.setAttribute('alt', `${friendlyName}`);
+    if (urlParams.has('ios-src')) {
+      const iosSrc = urlParams.get('ios-src');
+      modelViewer.setAttribute('ios-src', `${iosSrc}`);
+    }
+    if (urlParams.has('poster')) {
+      const poster = urlParams.get('poster');
+      modelViewer.setAttribute('poster', `${poster}`);
+    }
+    if (urlParams.has('alt')) {
+      const alt = urlParams.get('alt');
+      modelViewer.setAttribute('alt', `${alt}`);
     }
     clearInterval(checkExist);
   }
