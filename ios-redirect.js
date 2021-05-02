@@ -13,7 +13,6 @@ function isIOS() {
   || (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
 }
 
-console.log(isIOS())
 // Try to start the iOS AR Quick Look immediatelly
 // @see https://github.com/google/model-viewer/issues/697
 // @see https://infinitygames-kids-galicnik.glitch.me/
